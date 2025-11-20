@@ -1,0 +1,48 @@
+# 1. Crear una lista vacía y llenarla con los números  del 1 al 50 (1,2,3,...,48,49,50). Sugerencia: usar un ciclo, no generarla directamente con [1,2,3,...,48,49,50] ni list(range(0,50)) (1 punto)
+listavacia = list()
+for listallena in range (0,51):
+    listavacia.append(listallena)
+    print(listallena)
+
+
+#2. Crear una lista vacía y llenarla con los números múltiplos de 5 del 2 al 50 (5,10,15,...,40,45,50). Nota: hay que usar un ciclo, no se vale generarla directamente con [5,10,15,...,40,45,50] ni list(range(0,50,5)) (3 puntos)
+listados=()
+for  multiplos  in range(2,51):
+    if multiplos % 5 == 0 :
+        print(multiplos)
+
+
+
+#3. Hacer un programa que imprima (4 puntos)
+#*
+#**
+#***
+#****
+#****
+#******
+#*******
+#********
+#*********
+#**********
+
+for listarara in range(0,10):
+    print("*" * listarara)
+
+
+
+
+
+#4. Investigar cómo se usa un ciclo while y hacer un programa que imprima los números del 1 al 10. (2 puntos)
+# El ciclo while es una repeticion de un codigo , cuando la condicion es verdadera 
+cocacola=1 
+while cocacola <= 10:
+    print(cocacola)
+    cocacola += 1
+    # asignamos un valor a la variable, 
+    # cocacola <= 10: se escribe asi para especificar a que numero de caracteres debemos llegar
+    #while nos va a repetir el caracter cuantas veces le asignemos 
+    #cocacola += 1 es para que cada vez que avanza una cantidad de caracter se le agregue el valor de uno al caracter anterior , si no da 10 veces 1 en este caso
+ cocacola=1 
+while cocacola < 100:
+    print(cocacola)
+    cocacola += 1
