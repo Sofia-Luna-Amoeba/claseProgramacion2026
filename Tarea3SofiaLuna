@@ -1,0 +1,88 @@
+#1. Investigar cómo se usa el operador módulo (modulus) en python, explicarlo con sus palabras y poner un ejemplo. (1 punto)
+# Este hace referencia al % , el cual ya hemos usado  anteriormente para ubicar los comandos pares y los multiplis de 5 
+# pues sabemos que cualquier numero multiplo de 5 , divido entre 5 ,nos da como residuo 0 (% 5 == 0)
+#modulo es el operador que nos permite saber y ejecutar esto , pues nos dice el residuo resultande la divicion
+# y se usa de la siguiente forma dividendo % divisor y el numero que da es el residuo
+print (21 % 5 )
+# el residuo es uno, no es multiplo de 5 , pero la principal funcion del operador es como tal darnos el residui , por eso nos dio 1
+if 21 % 5 ==0 :
+    print("si es multiplo")
+else:
+    print("nopo")
+# un ejemplo de solo su utilidad :
+print (67 % 5 )
+print (80 % 8 )
+print (11 % 2 )
+
+#2. Crear una lista vacía y llenarla con los números pares del 2 al 50 (2,4,6,8,...,48,50) utilizando un for y un condicional para controlar que sólo los pares se agreguen.  (2 puntos)
+listados=[]
+for  multiplos  in range(2,51):
+    if multiplos % 2 == 0 :
+        print(multiplos)
+
+
+
+#3. Investigar para qué sirve el comando "break" en un for, explicarlo con sus palabras y hacer un ejemplo. (1 punto)
+# este comando interrumpe el comando, inmediato despues de ejecutar la primer orden que le diste 
+listados=()
+for  multiplos  in range(2,51):
+    if multiplos % 5 == 0 :
+        print(multiplos)
+        break
+# en este ejemplo podemos ver que solo imprimio el primer numero que se le fue asignado o comandado por asi decirlo
+lista= [10, 20, 30, 40, 50, 60]
+
+for lista in lista:
+    if lista == 40:
+        print("Ok")
+        break
+# aqui encontro el numero 40 que se le fue asignado e interumpio el programa 
+lista= [10, 20, 30, 40, 50, 60]
+
+for lista in lista:
+    if lista == 10:
+        print("Ok")
+        break
+
+#4. Programar el método find de los strings a mano. (2 puntos) Sugerencia: utilizar break cuando encuentren lo que buscan
+palabra = 'banana'
+# regresar la posición de la primera 'a'
+# length , sirve para ver cuantos elementos tiene un string 
+print(len(palabra))
+
+for pos in range(len(palabra)):
+    if palabra[pos] == 'a':
+        posicion = pos
+        print(posicion)
+# aqui nos dio la posicion de las 3 a
+for pos in range(len(palabra)):
+    if palabra[pos] == 'a':
+        posicion = pos
+        print(posicion)
+        break
+#este ya es el resultado
+
+#5. Imprimir todos los números de la siguiente lista utilizando ciclos: (4 puntos)
+#lista = [ [1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5] ]
+# 1
+# 1
+# 2
+# 1
+# 2
+# 3
+# 1
+# 2
+# 3
+# 4
+# 1
+# 2
+# 3
+# 4
+# 5
+lista = [ [1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5] ]
+for e in lista:
+    for c in e:
+        print(c)
+   
+
+# aqui creamos como dos ciclos para que nos de los elementos
