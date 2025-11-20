@@ -1,0 +1,97 @@
+#1. Cómo podemos concatenar un número a un string? (.5 punto)
+tantos= str(2)
+print(tantos)
+"tengo" + str(tantos) + "hermanos"
+mensaje  ="tengo" + str(tantos) + "hermanos"
+print(mensaje)
+
+#2. De qué tipo son las variables justifica la respuesta (1.5 puntos)
+# Es del tipo str , porque tiene comillas y fue guardado como string
+a = "1"
+print(a)
+print(type(a))
+#b = 1.0 es del tipo decimal, tambien llamado float, porque aunque logicamente es un entero ya se su valor es 1 , se le fue asignado un punto decimal y un numero consiguiente al punto, entonces python lo lee asi
+b = 1.0
+print(b)
+print(type(b))
+# c = 1.5 + True es del tipo , float
+c = 1.5 + True
+print(c)
+print(type(c))
+#d es del tipo, float pues es un numero decimal  aun incluso sumandolos, python lo registra como decimal d = 1.5 + 2.5 
+d = 1.5 + 2.5
+print(d)
+print(type(d))
+# e es del tipo int, o entero porque es la suma de dos enteros 
+e = 1 + True
+print(e)
+print(type(e))
+# es del tipo entero porque no lo clasifica como bool 
+f = False + False
+print(f)
+print(type(f))
+# g es del tipo int o entero igualmente que el caso anterior , porque es una suma de dos enteros o asi lo ve
+g = True * 0
+print(g)
+print(type(g))
+#3. Manipulando la variable palabra (concatenando y con los métodos de strings), convertirla (2 puntos)
+#a. cambiar algunas letras por números
+#palabra = "hola" 
+#"Ho14"
+palabra="hola"
+print(palabra.replace("l","1"))
+print(palabra.replace("h","B").replace("a","0"))
+#b. remover espacios
+palabra = "  hola"
+#en"hola"
+print(palabra.strip())
+
+#c. cambiar mayúsculas y minúsculas
+palabra = "HoLa"
+#en "hOlA"
+palabra="HoLa"
+print(palabra.replace("o","O").replace("L","l").replace("H","h").replace("a","A"))
+
+#d. poner la primera en mayúscula
+#palabra = "hola"
+#en "Hola"
+palabra= "hola"
+print(palabra.capitalize())
+
+
+#34. Explica qué hacen los métodos y da un ejemplo: (2 puntos)
+#a. count() 
+#dice el numero de veces que se repite una palbra o numero o letra en una frase al que fue asignada auna variable
+frase= "pancho tiene un hermano, se llama pancho y su primo tambien es pancho, como pancho villa"
+print(frase.count("pancho"))
+ok= "cocacola"
+print(ok.count("o"))
+#b. find()
+# dice despues de cuantos caracteres encontro el caracter o palabra 
+a = "aguacate"
+print(a.find("c"))
+
+#c. isdigit()
+#dice si es digito o no , si es True o si es una palabra no , aqui dos ejemplos, verdero y falso
+año = "2022"
+print(año.isdigit())
+contra = "Bio2022"
+print(contra.isdigit())
+
+#d. replace() , este comando remplasa el primer signo(letra o numero del string)por otro con ayuda de comas y comillas
+
+#5. Qué problema tiene declarar estas variables? (1.5 puntos)
+#oración larga = 'hola mundo' Esta te marcaria error porque una variable no puede tener espacios entre si
+#asi es valido
+oracion = "  hola   mundo"
+#pero no a la inversa , que es lo que trata de hacer aqui (oración larga = 'hola mundo')
+
+#palabra = 'hola' 'mundo'
+#Aqui esta tratando de asignar dos valores a una sola variable cosa que tampoco es valida 
+
+#6. Investigar "fstring" qué son, cómo se usan y un ejemplo. (2.5 puntos)
+# ftring consiste en la funcion f , al agregarla al principio de una oracion nos permite posteriormente 
+# agregar strings sin necesidad de usar la suma y en lugar de estar sumando, simplemente agregar llaves y dentro de ellas las variables_strings 
+palabra = "taza"
+numero = 2
+print(f"por cada {palabra} de arroz {numero} de agua")
